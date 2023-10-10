@@ -50,3 +50,80 @@
         @include style-btn(64px, $w, 1.8rem);
     }
 }
+
+.item-digital {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    width: 100%;
+    max-width: 38.4rem;
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 31.9rem;
+
+        h6 {
+            line-height: 150%;
+            letter-spacing: -0.66px;
+            margin-bottom: .8rem;
+        }
+        p {
+            color: $gray-600;
+            letter-spacing: -0.54px;
+        }
+    }
+}
+
+.card-post {
+    // width: 100%;
+    // max-width: 80rem;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    padding: 2.4rem;
+
+    .tag {
+        display: inline-block;
+        padding: 0.8rem 2.2rem;
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 0.10);
+
+        font-family: $font-headers, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 100%; /* 14px */
+        letter-spacing: 1.26px;
+        text-transform: uppercase;
+
+        margin-bottom: 4.5rem;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 6.4rem;
+    }
+
+    .info-post {
+        max-width: 48.2rem;
+
+        h6 {
+            line-height: 120%; /* 26.4px */
+            letter-spacing: -0.66px;
+
+            margin-bottom: .8rem;
+        }
+
+        p {
+            color: $gray-600;
+            font-size: 1.6rem;
+            letter-spacing: -0.48px;
+        }
+    }
+}
