@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+  
+img {
+    display: inline-block;
+    width: 100%;
+    max-width: fit-content;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+input, textarea, select {
+    outline: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

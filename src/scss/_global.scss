@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    
+    font-size: 62.5%; /* Pra usar rem divisivel por 10*/
+    @media screen and (max-width: 480px) {
+      font-size: 55%;
+    }
+}
+
+body {
+    background-color: $gray-900;
+    width: 100%;
+
+    font-size: 1.8rem; /* Pra garantir q o padrao seja 18px no navegador*/
+    color: $gray-100;
+    -webkit-font-smoothing: antialiased;
+}
+body, input, textarea, button, select, a {
+    font-family: $font-main, sans-serif;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

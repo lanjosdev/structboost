@@ -1,0 +1,52 @@
+// @mixin grid-layout() {
+//     width: 100%;
+//     max-width: 1216px;
+    
+//     margin: 0 auto;
+// }
+/* GRID LAYOUT */
+.grid {
+    width: 100%;
+    max-width: 1216px;
+    
+    margin: 0 auto;
+}
+/* GRID LAYOUT */
+
+@mixin style-btn($height, $bg, $fontSize) {
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    height: $height;
+    padding: 0 2.4rem;
+
+    font-size: $fontSize;
+    color: $gray-900;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.48px;
+
+    // filter: drop-shadow(0 0 10px $bg);
+    transition: all .3s ease;
+
+    &:hover {
+        filter: drop-shadow(0 0 7px $bg) brightness(1.1);
+    }
+    &:active {
+        filter: drop-shadow(0 0 7px $bg) brightness(0.8);
+    }
+}
+.btn-primary {
+    @include style-btn(48px, $pink-10, 1.6rem);
+
+    &.lg {
+        @include style-btn(64px, $pink-10, 1.8rem);
+    }
+}
+.btn-white {
+    @include style-btn(48px, $w, 1.6rem);
+
+    &.lg {
+        @include style-btn(64px, $w, 1.8rem);
+    }
+}
