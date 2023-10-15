@@ -1,0 +1,47 @@
+section#s-art-front {
+    @include spacing-lateral();
+    padding-top: 12.8rem;
+    padding-bottom: 12.8rem;
+
+    .title-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 6.4rem;
+
+        p {
+            color: $gray-600;
+            letter-spacing: -0.54px;
+        }
+
+        .left {
+            width: 100%;
+            max-width: 53.9rem;
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: -1.2px;
+                margin-bottom: 1.6rem;
+            }
+            p {
+                max-width: 45.2rem;
+            }
+        }
+
+        .right {
+            width: 100%;
+            max-width: 42.9rem;
+        }
+    }
+
+    .all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.2rem;
+
+        .card-post:first-child {
+            grid-column: span 2; // da onde ele começa e ocupa 2 colunas
+        }
+    }
+}
