@@ -1,0 +1,30 @@
+section#s-newsletter {
+    @include spacing-lateral();
+    background-color: $pink-10;
+    padding-top: 8.9rem;
+    padding-bottom: 8.9rem;
+
+    .grid {
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        max-width: 64.6rem;
+        font-weight: 600;
+        letter-spacing: -1.44px;
+
+        margin-bottom: 1.6rem;
+    }
+    p {
+        max-width: 68.7rem;
+
+        font-size: 22px;
+        letter-spacing: -0.66px;
+
+        margin-bottom: 2.4rem;
+    }
+}

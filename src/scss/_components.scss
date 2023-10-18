@@ -44,6 +44,7 @@
     }
 }
 .btn-white {
+    font-family: $font-headers, $font-main;
     @include style-btn(48px, $w, 1.6rem);
 
     &.lg {
