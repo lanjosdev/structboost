@@ -48,13 +48,13 @@ header {
 
 
     @media screen and (max-width: 768px) {
-        .btn-mobile {
-            display: block;
-        } 
-
         nav {
             display: none;
         }
+        
+        .btn-mobile {
+            display: block;
+        } 
     }
 
     // Celulares:

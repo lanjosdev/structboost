@@ -12,7 +12,7 @@ section#s-hero {
     &::after {
         content: '';
         width: 100%;
-        height: 22rem;
+        height: 20rem;
         background-color: $pink-10;
         position: absolute;
         bottom: 0;
@@ -65,5 +65,87 @@ section#s-hero {
             left: 5.5rem;
             bottom: 1.718rem;
         }
+    }
+
+    .ilustra-mobile {
+        display: none;
+    }
+
+
+    // RESPONSIVIDADE:
+    @media screen and (max-width: 991px) {
+        &::after {
+            height: 12rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 7rem;
+
+        .info-hero {
+            h1 {
+                max-width: 49rem;
+
+                &::before {
+                    background-size: 100%;
+                    left: 0;
+                    bottom: -4px;
+                }
+            }
+
+            img.arrow {
+                max-width: 70px;
+                left: 2.2rem;
+                bottom: 3rem;
+            }
+        }
+    }
+
+    // Celulares:
+    @media screen and (max-width: 560px) {
+        padding-top: 8.8rem;
+
+        &::after {
+            height: 22rem;
+        }
+
+        .info-hero {
+            h1 {
+                font-size: 40px;
+                letter-spacing: -1.2px;
+                margin-bottom: 10px;
+
+                &::before {
+                    min-width: 350px;
+                    left: -5px;
+                    bottom: -5px;
+                }
+            }
+
+            p {
+                margin-bottom: 24px;
+                letter-spacing: -0.48px;
+            }
+
+            img.arrow {
+                display: none;
+            }
+        }
+        
+        .ilustra {
+            display: none;
+        }
+        .ilustra-mobile {
+            display: block;
+            position: relative;
+            left: 35px;
+        }
+    }
+
+    // excessao:
+    @media screen and (max-width: 440px) {
+        .ilustra-mobile {
+            left: 15px;
+        }        
     }
 }

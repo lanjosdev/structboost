@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     height: $height;
-    padding: 0 2.4rem;
+    padding: 0 24px;
 
     font-size: $fontSize;
     color: $gray-900;
@@ -40,7 +40,7 @@
     @include style-btn(48px, $pink-10, 1.6rem);
 
     &.lg {
-        @include style-btn(64px, $pink-10, 1.8rem);
+        @include style-btn(64px, $pink-10, 18px);
     }
 }
 .btn-white {
