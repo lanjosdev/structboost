@@ -151,3 +151,33 @@
         }
     }
 }
+
+// Mobile
+@media screen and (max-width: 520px) {
+    .card-post {
+        padding: 16px;
+
+        .tag {
+            padding: 7px 19.25px;
+    
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .content .info-post {
+            max-width: 294px;
+
+            h6 {
+                font-size: 18px;
+                letter-spacing: -0.54px;
+            }
+            p {
+                letter-spacing: -0.42px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
