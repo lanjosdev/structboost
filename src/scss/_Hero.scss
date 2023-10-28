@@ -67,9 +67,12 @@ section#s-hero {
         }
     }
 
-    .ilustra-mobile {
-        display: none;
+    picture {
+        line-height: 0;
     }
+    // .ilustra-mobile {
+    //     display: none;
+    // }
 
 
     // RESPONSIVIDADE:
@@ -132,10 +135,10 @@ section#s-hero {
             }
         }
         
-        .ilustra {
-            display: none;
-        }
-        .ilustra-mobile {
+        // .ilustra {
+        //     display: none;
+        // }
+        picture {
             display: block;
             position: relative;
             left: 35px;
@@ -144,7 +147,7 @@ section#s-hero {
 
     // excessao:
     @media screen and (max-width: 440px) {
-        .ilustra-mobile {
+        picture {
             left: 15px;
         }        
     }
