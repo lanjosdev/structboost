@@ -27,4 +27,39 @@ section#s-newsletter {
 
         margin-bottom: 2.4rem;
     }
+
+
+    // RESPONSIVIDADE:
+    // Monitores pequenos
+    @media screen and (max-width: 1200px) {
+    }
+
+    // Tablet
+    @media screen and (max-width: 991px) {
+    }
+
+    // Tablet pequeno
+    // @media screen and (max-width: 768px) {
+    // }
+
+    // Mobile
+    @media screen and (max-width: 560px) {
+        padding-top: 8.9rem;
+        padding-bottom: 8.9rem; 
+
+        h2 {
+            font-size: 40px;
+            letter-spacing: -1.2px;
+
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            letter-spacing: -0.54px;
+            max-width: 325px;
+
+            margin-bottom: 32px;
+        }
+    }
 }

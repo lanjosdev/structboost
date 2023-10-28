@@ -89,15 +89,21 @@
     padding: 2.4rem;
 
     .tag {
-        display: inline-block;
-        padding: 0.8rem 2.2rem;
+        // display: inline-block;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        padding: 0rem 2.2rem;
+
         border-radius: 100px;
         background: rgba(255, 255, 255, 0.10);
 
         font-family: $font-headers, sans-serif;
-        font-size: 1.4rem;
+        font-size: 14px;
         font-weight: 600;
-        line-height: 100%; /* 14px */
+        // line-height: 100%; /* 14px */
         letter-spacing: 1.26px;
         text-transform: uppercase;
 
@@ -158,10 +164,7 @@
         padding: 16px;
 
         .tag {
-            padding: 7px 19.25px;
-    
-            font-size: 14px;
-            text-align: center;
+            height: 28px;
         }
 
         .content .info-post {
