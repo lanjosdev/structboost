@@ -39,15 +39,17 @@ section#s-hero {
 
             &::before {
                 content: '';
-                width: 100%;
+                // width: 100%;
                 max-width: 59.9rem;
                 height: 2.2rem;
-                background: url(../assets/line-title.svg) no-repeat center center;
+                background: url(../assets/line-title.svg) no-repeat left center;
 
                 position: absolute;
                 left: 3.9rem;
                 bottom: -5px;
                 z-index: -1;
+
+                animation: drawLine .7s ease-in forwards;
             }
         }
 
@@ -64,6 +66,8 @@ section#s-hero {
             position: absolute;
             left: 5.5rem;
             bottom: 1.718rem;
+
+            animation: floating 3s ease-in-out infinite;
         }
     }
 
@@ -74,6 +78,28 @@ section#s-hero {
     //     display: none;
     // }
 
+
+    // ANIMAÇÕES:
+    @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes floating {
+        0% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(10px);
+        }
+        100% {
+            transform: translateX(-5px);
+        }
+    }
 
     // RESPONSIVIDADE:
     @media screen and (max-width: 991px) {
@@ -119,7 +145,7 @@ section#s-hero {
                 margin-bottom: 10px;
 
                 &::before {
-                    min-width: 350px;
+                    // min-width: 350px;
                     left: -5px;
                     bottom: -5px;
                 }
