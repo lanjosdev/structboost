@@ -5,6 +5,8 @@ html {
     @media screen and (max-width: 480px) {
       font-size: 55%;
     }
+
+    // overflow-x: hidden;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
     font-size: 1.8rem; /* Pra garantir q o padrao seja 18px no navegador*/
     color: $gray-100;
     -webkit-font-smoothing: antialiased;
+
+    overflow-x: hidden;
 }
 body, input, textarea, button, select, a {
     font-family: $font-main, sans-serif;

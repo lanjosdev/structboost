@@ -46,7 +46,7 @@
     <section id="s-hero">
         <div class="grid">
 
-        <div class="info-hero">
+        <div class="info-hero" data-aos="fade-right">
             <h1>Front-end descomplicado e direto ao ponto!</h1>
 
             <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
@@ -63,17 +63,17 @@
             <!-- <img src="./src/assets/ilustra-hero.svg" class="ilustra" alt=""> -->
             <!-- <img src="./src/assets/ilustra-mobile.png" class="" alt=""> -->
         <!-- </picture> -->
-        <img src="./src/assets/ilustra-hero.png" class="ilustra" alt="">
-        <img src="./src/assets/ilustra-mobile.png" class="ilustra-mobile" alt="">
+        <img src="./src/assets/ilustra-hero.png" class="ilustra" data-aos="fade-up" data-aos-delay="200" alt="" >
+        <img src="./src/assets/ilustra-mobile.png" data-aos="fade-up" data-aos-delay="200" class="ilustra-mobile" alt="">
     </section>
 
     <section id="s-digital">
         <div class="grid">
         
-        <h3>Transformando Ideias em Realidade Digital!</h3>
+        <h3 data-aos="fade-right">Transformando Ideias em Realidade Digital!</h3>
 
         <ul>
-            <li>
+            <li data-aos="fade-right">
                 <div class="item-digital">
                     <div class="icon">
                         <img src="./src/assets/icon-impacto.svg" alt="">
@@ -86,7 +86,7 @@
 
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-up">
                 <div class="item-digital">
                     <div class="icon">
                         <img src="./src/assets/icon-nav.svg" alt="">
@@ -99,7 +99,7 @@
 
                 </div>
             </li>
-            <li>
+            <li data-aos="fade-left">
                 <div class="item-digital">
                     <div class="icon">
                         <img src="./src/assets/icon-performance.svg" alt="">
@@ -121,18 +121,18 @@
         <div class="grid">
 
         <div class="title-text">
-            <div class="left">
+            <div class="left" data-aos="fade-right">
                 <h3>Domine a Arte da Front-end</h3>
                 <p>Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de front-end.</p>
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="fade-left">
                 <p>Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um desenvolvedor web altamente qualificado.</p>
             </div>
         </div>
 
         <div class="all">
-            <div class="card-post">
+            <div class="card-post" data-aos="flip-left">
                 <span class="tag">Fundamentos</span>
 
                 <div class="content">
@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-post">
+            <div class="card-post" data-aos="flip-left">
                 <span class="tag">Estilizando</span>
 
                 <div class="content">
@@ -158,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-post">
+            <div class="card-post" data-aos="flip-left">
                 <span class="tag">Potencializando</span>
 
                 <div class="content">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-post">
+            <div class="card-post" data-aos="flip-left">
                 <span class="tag">Aplicações</span>
 
                 <div class="content">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-post">
+            <div class="card-post" data-aos="flip-left">
                 <span class="tag">Designs</span>
 
                 <div class="content">
@@ -204,7 +204,7 @@
     </section>
 
     <section id="s-newsletter">
-        <div class="grid">
+        <div class="grid" data-aos="zoom-in-up">
         
         <h2>Front-end descomplicado e direto ao ponto!</h2>
 
@@ -301,6 +301,15 @@
 
         </div>
     </footer>
+
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800
+        });
+    </script>
 </body>
 
 </html>

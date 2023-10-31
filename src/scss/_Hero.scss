@@ -49,7 +49,7 @@ section#s-hero {
                 bottom: -5px;
                 z-index: -1;
 
-                animation: drawLine .7s ease-in forwards;
+                animation: drawLine .7s 0.3s ease-in forwards;
             }
         }
 
