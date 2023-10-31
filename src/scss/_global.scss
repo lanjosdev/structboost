@@ -4,7 +4,7 @@ html {
     font-size: 62.5%; /* Pra usar rem divisivel por 10*/
     @media screen and (max-width: 480px) {
       font-size: 55%;
-      // overflow-x: hidden;
+      overflow-x: hidden;
     }
 }
 
