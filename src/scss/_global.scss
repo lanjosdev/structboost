@@ -4,9 +4,8 @@ html {
     font-size: 62.5%; /* Pra usar rem divisivel por 10*/
     @media screen and (max-width: 480px) {
       font-size: 55%;
+      // overflow-x: hidden;
     }
-
-    // overflow-x: hidden;
 }
 
 body {
@@ -17,7 +16,9 @@ body {
     color: $gray-100;
     -webkit-font-smoothing: antialiased;
 
-    overflow-x: hidden;
+    @media screen and (max-width: 560px) {
+        overflow-x: hidden;
+    }
 }
 body, input, textarea, button, select, a {
     font-family: $font-main, sans-serif;
